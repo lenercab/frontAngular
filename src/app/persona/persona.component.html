@@ -1,0 +1,35 @@
+<br />
+<br />
+<div class="container">
+<div class="row">
+  <div class= "col-12">
+    <div class="alert alert-success" role="alert">
+      <a href="/register" class="alert-link">Agregar una persona</a>
+    </div>
+<table class="table table-striped">
+<thead>
+<th>Identification</th>
+<th>Nombres</th>
+<th>Apellidos</th>
+<th>Usuario</th>
+<th>Cuentas</th>
+<th></th>
+</thead>
+<tbody>
+  <tr *ngFor="let item of personas">
+    <td>{{item.identification}}</td>
+    <td>{{item.firstName}}</td>
+    <td>{{item.lastName}}</td>
+    <td>{{item.users[0].username}}</td>
+    <td>{{item.accounts[0].number}}</td>
+    <td>
+      <button (click)="eliminarPersona(item.identification)" class="btn btn-success">Eliminar</button>
+       &nbsp;
+      <button  class="btn btn-success">Editar</button>
+    </td>
+  </tr>
+</tbody>
+</table>
+  </div>
+</div>
+</div>

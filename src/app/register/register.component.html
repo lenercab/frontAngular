@@ -1,0 +1,14 @@
+<div class="login-page">
+  <div class="form">
+    <form class="register-form">
+      <input type="text" [(ngModel)]="persona.firstName" name="firstName" placeholder="nombres"/>
+      <input type="text" [(ngModel)]="persona.lastName" name="lastName" placeholder="apellidos"/>
+      <input type="text" [(ngModel)]="persona.identification" name="identification" placeholder="No. Identificacion"/>
+      <input type="text" [(ngModel)]="persona.users[0].username" name="user" placeholder="User"/>
+      <input type="password" [(ngModel)]="persona.users[0].password" name="password" placeholder="password"/>
+      <button (click)="agregarPersona()">create</button>
+      <p class="message">
+¿Ya registrado? <a href="#">Registrarse</a></p>
+    </form>
+    </div>
+</div>
