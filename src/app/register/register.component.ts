@@ -9,7 +9,7 @@ import {PersonaService} from '../servicio/persona.service';
 })
 export class RegisterComponent implements OnInit {
 
-  Input persona = {
+  Input persona : {
         firstName: '',
         lastName: '',
         identification: '',
